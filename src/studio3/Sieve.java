@@ -18,7 +18,7 @@ public class Sieve {
 
         for (int i=2; i<n; i++) {
             if (primes[i] == false) {
-                System.out.println(i);
+                System.out.print(i+" ");
             }
         }
     }
