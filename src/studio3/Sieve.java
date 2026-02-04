@@ -7,23 +7,19 @@ public class Sieve {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a value for n: ");
         int n = in.nextInt();
-        boolean[] seive = new boolean[n];
+        boolean[] primes = new boolean[n];
 
         for (int i = 2; i < n; i++) {
             for (int j = 2*i; j < n;){
-                seive[j] = true;
+                primes[j] = true;
                 j = i+j;
-
             }
-
         }
 
         for (int i=2; i<n; i++) {
-            if (seive[i] == false) {
+            if (primes[i] == false) {
                 System.out.println(i);
             }
-
         }
     }
-
 }
